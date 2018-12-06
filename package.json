@@ -1,0 +1,23 @@
+{
+  "name": "docker-hapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "handlebars": "^4.0.10",
+    "hapi": "^16.4.3",
+    "inert": "^4.2.0",
+    "mysql": "^2.16.0",
+    "nodemon": "^1.18.7",
+    "vision": "^4.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blogfoster/docker-hapi.git"
+  },
+  "author": "blogfoster team"
+}
