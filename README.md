@@ -19,3 +19,10 @@ or using installed module 'nodemon' to run the server automatically after change
 ```bash
 $ nodemon
 ```
+
+to start the MongoDB docker-container:
+```bash
+$ cd mongoDB
+$ docker-compose up
+```
+

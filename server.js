@@ -5,7 +5,14 @@
 
 const Hapi = require('hapi');
 const inert = require('inert')
-const mysql = require('mysql');
+const mongoose = require('mongoose');
+
+// MongoDB connection like the guide on the homepage 'mongoosejs.com'
+mongoose.connect('mongodb://localhost/hapidb')
+.then(() => console.log('MongoDB connected...'))
+.catch(err => console.error(err));
+
+
 
 const server = new Hapi.Server();
 server.connection({
@@ -81,3 +88,8 @@ server.register(require('vision'), (err) => {
 server.start(() => {
   console.log('info', 'Server running at: ' + server.info.uri);
 });
+
+
+
+
+
